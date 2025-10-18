@@ -8,10 +8,10 @@ class SideMenuComponent {
     
     item(param) {
         const selectors = {
-            allItems: "#inventory_sidebar_link",
-            about: "#about_sidebar_link",
-            logout: "#logout_sidebar_link",
-            resetAppState: "#reset_sidebar_link"
+            allItems: "[data-test='inventory-sidebar-link']",
+            about: "[data-test='about-sidebar-link']",
+            logout: "[data-test='logout-sidebar-link']",
+            resetAppState: "[data-test='reset-sidebar-link']"
         };
         return this.rootElement.$(selectors[param.toLowerCase()]);    
     }
