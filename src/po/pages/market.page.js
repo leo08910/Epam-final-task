@@ -1,20 +1,13 @@
-const { $ } = require('@wdio/globals')
-const Page = require('./page');
+const BasePage = require('./base.page');
 const Header = require('../components/common/header.component');
 
-
-/**
- * sub page containing specific selectors and methods for a specific page
- */
-class MarketPage extends Page {
+class MarketPage extends BasePage {
 
     constructor() {
         super();
         this.header = new Header();
     }
-    /**
-     * define selectors using getter methods
-     */
+
     get title () {
         return $("[data-test=title]");
     }

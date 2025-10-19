@@ -1,17 +1,16 @@
-const { $ } = require('@wdio/globals')
 const SideMenu = require('./side-menu.component');
+const BaseComponent = require('../base.component');
 
-class Header {
+class Header extends BaseComponent {
   constructor() {
+      super("[data-test='header']");
       this.sideMenu = new SideMenu();
   }
-  get rootElement() { return $("[data-test='header']")}
   get menuButton() { return $("[data-test='open-menu']")}
   get cartIcon() { return $("[data-test='shopping-cart-link']")}
 
   async openMenu() {
     await this.menuButton.click();
   }
-
 }
 module.exports = Header;

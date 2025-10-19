@@ -1,6 +1,4 @@
-const { expect } = require("@wdio/globals");
-const LoginPage = require("../../po/pages/login.page");
-const loginPage = new LoginPage();
+const loginPage = require("../../po/pages/login.page");
 const users = require("../../tests/data/data");
 
 describe("SauceDemo Login Tests", () => {
@@ -39,9 +37,7 @@ describe("SauceDemo Login Tests", () => {
 
   users.forEach(({ username }) => {
     it(`UC-3: should login successfully with valid user ${username}`, async () => {
-      await loginPage.inputUsername.setValue(username);
-      await loginPage.inputPassword.setValue("secret_sauce");
-      await loginPage.btnSubmit.click();
+      await loginPage.login(username ,"secret_sauce");
 
       await expect(browser).toHaveTitle("Swag Labs");
     });

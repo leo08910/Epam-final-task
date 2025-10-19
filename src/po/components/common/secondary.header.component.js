@@ -1,7 +1,11 @@
-const { $ } = require('@wdio/globals')
+const BaseComponent = require('../base.component');
 
-class SecondaryHeader {
-    get rootElement() { return $("[data-test='secondary-header']") }
+class SecondaryHeader extends BaseComponent {
+
+    constructor() {
+        super("[data-test='secondary-header']");
+    }
+
     get title() { return $("[data-test='title']")}
 }
 

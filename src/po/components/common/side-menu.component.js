@@ -1,11 +1,10 @@
-const { $ } = require('@wdio/globals')
+const BaseComponent = require('../base.component'); 
 
-class SideMenuComponent {
-
-    get rootElement() {
-        return $('.bm-menu-wrap');
+class SideMenuComponent extends BaseComponent {
+    constructor() {
+        super('.bm-menu-wrap');
     }
-    
+
     item(param) {
         const selectors = {
             allItems: "[data-test='inventory-sidebar-link']",

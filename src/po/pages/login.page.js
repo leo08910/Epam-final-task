@@ -1,8 +1,6 @@
-const { $ } = require('@wdio/globals')
-const Page = require('./page');
+const BasePage = require('./base.page');
 
-
-class LoginPage extends Page {
+class LoginPage extends BasePage {
 
     get inputUsername () {
         return $("[data-test='username']");
@@ -45,4 +43,4 @@ class LoginPage extends Page {
     }
 }
 
-module.exports = LoginPage;
+module.exports =  new LoginPage;
