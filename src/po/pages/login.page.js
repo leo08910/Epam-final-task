@@ -2,6 +2,9 @@ const BasePage = require('./base.page');
 
 class LoginPage extends BasePage {
 
+    constructor() {
+        super("/");
+    }
     get inputUsername () {
         return $("[data-test='username']");
     }
@@ -37,10 +40,6 @@ class LoginPage extends BasePage {
         await browser.keys('Backspace');
     }
 
-
-    open () {
-        return super.open('https://www.saucedemo.com/');
-    }
 }
 
 module.exports =  new LoginPage;

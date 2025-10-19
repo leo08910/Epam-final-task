@@ -1,6 +1,10 @@
 module.exports = class BasePage {
 
-    open (path) {
-        return browser.url(path)
+    constructor(url){
+        this.url = url;
+    }
+
+    open () {
+        return browser.url(this.url);
     }
 }
