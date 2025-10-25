@@ -1,3 +1,7 @@
+const {
+  JSONReporter,
+  HTMLReportGenerator,
+} = require("wdio-json-html-reporter");
 exports.config = {
   //
   // ====================
@@ -66,7 +70,7 @@ exports.config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
+  logLevel: "error",
   //
   // Set specific log levels per logger
   // loggers:
@@ -90,7 +94,7 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'https://www.saucedemo.com',
+  baseUrl: "https://www.saucedemo.com",
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -129,7 +133,13 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ["spec"],
+  reporters: [
+    "spec",
+    [
+      JSONReporter,
+      { outputFile: "./reports/test-results.json", screenOption: "Full" },
+    ],
+  ],
 
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
@@ -275,8 +285,20 @@ exports.config = {
    * @param {Array.<Object>} capabilities list of capabilities details
    * @param {<Object>} results object containing test results
    */
-  // onComplete: function(exitCode, config, capabilities, results) {
-  // },
+  onComplete: async function() {
+      const outputFilePath = './reports/test-report.html';
+      const jsonFolder = './reports'; // Directory where JSON reports are saved
+
+      // If you want to include historical data, specify the history JSON file path here.
+      const historyFile = './reports/history.json'; // Optional
+
+      // Optionally, generate aggregated history data before generating the HTML report.
+      // JSONReporter.generateAggregateHistory({ reportPaths: jsonFolder, historyPath: historyFile });
+
+      const reportGenerator = new HTMLReportGenerator(outputFilePath, historyFile);
+      await reportGenerator.convertJSONFolderToHTML(jsonFolder);
+    }
+  };
   /**
    * Gets executed when a refresh happens.
    * @param {string} oldSessionId session ID of the old session
@@ -296,4 +318,4 @@ exports.config = {
    */
   // afterAssertion: function(params) {
   // }
-};
+

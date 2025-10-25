@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "executionId": "1761433009948",
+    "browserName": "chrome",
+    "executionStartTime": "Sat, 25 Oct 2025 22:56:49 GMT",
+    "executionEndTime": "Sat, 25 Oct 2025 22:57:02 GMT",
+    "totalTimeInMinutes": "0.21"
+  },
+  "testResults": [
+    {
+      "uid": "test-00-0",
+      "timestamp": "22:56:54",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-1: should show error when credentials are empty",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "test-00-1",
+      "timestamp": "22:56:55",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-2: should show error when password is empty",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "test-00-2",
+      "timestamp": "22:56:55",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-3: should login successfully with valid user standard_user",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "test-00-3",
+      "timestamp": "22:56:56",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-3: should login successfully with valid user locked_out_user",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "test-00-4",
+      "timestamp": "22:56:56",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-3: should login successfully with valid user problem_user",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "test-00-5",
+      "timestamp": "22:57:01",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-3: should login successfully with valid user performance_glitch_user",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "test-00-6",
+      "timestamp": "22:57:02",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-3: should login successfully with valid user error_user",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "test-00-7",
+      "timestamp": "22:57:02",
+      "suiteName": "SauceDemo Login Tests",
+      "testName": "UC-3: should login successfully with valid user visual_user",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    }
+  ]
+}
