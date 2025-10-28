@@ -7,10 +7,10 @@ class SideMenuComponent extends BaseComponent {
 
     item(param) {
         const selectors = {
-            allItems: "[data-test='inventory-sidebar-link']",
+            allitems: "[data-test='inventory-sidebar-link']",
             about: "[data-test='about-sidebar-link']",
             logout: "[data-test='logout-sidebar-link']",
-            resetAppState: "[data-test='reset-sidebar-link']"
+            resetappstate: "[data-test='reset-sidebar-link']"
         };
         return this.rootElement.$(selectors[param.toLowerCase()]);    
     }
