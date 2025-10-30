@@ -137,7 +137,7 @@ exports.config = {
     "spec",
     [
       JSONReporter,
-      { outputFile: "./reports/test-results.json", screenOption: "Full" },
+      { outputFile: "./src/config/reports/test-results.json", screenOption: "Full" },
     ],
   ],
 
@@ -286,11 +286,11 @@ exports.config = {
    * @param {<Object>} results object containing test results
    */
   onComplete: async function() {
-      const outputFilePath = './reports/test-report.html';
-      const jsonFolder = './reports'; // Directory where JSON reports are saved
+      const outputFilePath = './src/config/reports/test-report.html';
+      const jsonFolder = './src/config/reports'; // Directory where JSON reports are saved
 
       // If you want to include historical data, specify the history JSON file path here.
-      const historyFile = './reports/history.json'; // Optional
+      const historyFile = './src/config/reports/history.json'; // Optional
 
       // Optionally, generate aggregated history data before generating the HTML report.
       // JSONReporter.generateAggregateHistory({ reportPaths: jsonFolder, historyPath: historyFile });

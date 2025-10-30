@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "executionId": "1761433009944",
-    "browserName": "firefox",
-    "executionStartTime": "Sat, 25 Oct 2025 22:56:49 GMT",
-    "executionEndTime": "Sat, 25 Oct 2025 22:57:07 GMT",
+    "executionId": "1761786050043",
+    "browserName": "chrome",
+    "executionStartTime": "Thu, 30 Oct 2025 01:00:50 GMT",
+    "executionEndTime": "Thu, 30 Oct 2025 01:01:07 GMT",
     "totalTimeInMinutes": "0.29"
   },
   "testResults": [
     {
       "uid": "test-00-0",
-      "timestamp": "22:56:58",
+      "timestamp": "01:00:58",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-1: should show error when credentials are empty",
       "status": "PASSED",
@@ -20,7 +20,7 @@
     },
     {
       "uid": "test-00-1",
-      "timestamp": "22:56:59",
+      "timestamp": "01:00:59",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-2: should show error when password is empty",
       "status": "PASSED",
@@ -31,7 +31,7 @@
     },
     {
       "uid": "test-00-2",
-      "timestamp": "22:56:59",
+      "timestamp": "01:01:00",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-3: should login successfully with valid user standard_user",
       "status": "PASSED",
@@ -42,7 +42,7 @@
     },
     {
       "uid": "test-00-3",
-      "timestamp": "22:57:00",
+      "timestamp": "01:01:00",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-3: should login successfully with valid user locked_out_user",
       "status": "PASSED",
@@ -53,7 +53,7 @@
     },
     {
       "uid": "test-00-4",
-      "timestamp": "22:57:00",
+      "timestamp": "01:01:01",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-3: should login successfully with valid user problem_user",
       "status": "PASSED",
@@ -64,7 +64,7 @@
     },
     {
       "uid": "test-00-5",
-      "timestamp": "22:57:05",
+      "timestamp": "01:01:06",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-3: should login successfully with valid user performance_glitch_user",
       "status": "PASSED",
@@ -75,7 +75,7 @@
     },
     {
       "uid": "test-00-6",
-      "timestamp": "22:57:06",
+      "timestamp": "01:01:06",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-3: should login successfully with valid user error_user",
       "status": "PASSED",
@@ -86,7 +86,7 @@
     },
     {
       "uid": "test-00-7",
-      "timestamp": "22:57:06",
+      "timestamp": "01:01:07",
       "suiteName": "SauceDemo Login Tests",
       "testName": "UC-3: should login successfully with valid user visual_user",
       "status": "PASSED",
