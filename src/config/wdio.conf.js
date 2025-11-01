@@ -25,6 +25,8 @@ exports.config = {
   // of the config file unless it's absolute.
   //
   specs: ["../tests/specs/**/*.js"],
+  // Para Cucumber : "../tests/features/**/*.feature"
+  // Para Mocha : "../tests/specs/**/*.js"
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -133,11 +135,41 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
+  cucumberOpts: {
+    // <string[]> (file/dir) require files before executing features
+    require: ["./src/tests/features/step-definitions/steps.js"],
+    // <boolean> show full backtrace for errors
+    backtrace: false,
+    // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
+    requireModule: [],
+    // <boolean> invoke formatters without executing steps
+    dryRun: false,
+    // <boolean> abort the run on first failure
+    failFast: false,
+    // <string[]> Only execute the scenarios with name matching the expression (repeatable).
+    name: [],
+    // <boolean> hide step definition snippets for pending steps
+    snippets: true,
+    // <boolean> hide source uris
+    source: true,
+    // <boolean> fail if there are any undefined or pending steps
+    strict: false,
+    // <string> (expression) only execute the features or scenarios with tags matching the expression
+    tagExpression: "",
+    // <number> timeout for step definitions
+    timeout: 60000,
+    // <boolean> Enable this config to treat undefined definitions as warnings.
+    ignoreUndefinedDefinitions: false,
+  },
+
   reporters: [
     "spec",
     [
       JSONReporter,
-      { outputFile: "./src/config/reports/test-results.json", screenOption: "Full" },
+      {
+        outputFile: "./src/config/reports/test-results.json",
+        screenOption: "Full",
+      },
     ],
   ],
 
@@ -285,37 +317,39 @@ exports.config = {
    * @param {Array.<Object>} capabilities list of capabilities details
    * @param {<Object>} results object containing test results
    */
-  onComplete: async function() {
-      const outputFilePath = './src/config/reports/test-report.html';
-      const jsonFolder = './src/config/reports'; // Directory where JSON reports are saved
+  onComplete: async function () {
+    const outputFilePath = "./src/config/reports/test-report.html";
+    const jsonFolder = "./src/config/reports"; // Directory where JSON reports are saved
 
-      // If you want to include historical data, specify the history JSON file path here.
-      const historyFile = './src/config/reports/history.json'; // Optional
+    // If you want to include historical data, specify the history JSON file path here.
+    const historyFile = "./src/config/reports/history.json"; // Optional
 
-      // Optionally, generate aggregated history data before generating the HTML report.
-      // JSONReporter.generateAggregateHistory({ reportPaths: jsonFolder, historyPath: historyFile });
+    // Optionally, generate aggregated history data before generating the HTML report.
+    // JSONReporter.generateAggregateHistory({ reportPaths: jsonFolder, historyPath: historyFile });
 
-      const reportGenerator = new HTMLReportGenerator(outputFilePath, historyFile);
-      await reportGenerator.convertJSONFolderToHTML(jsonFolder);
-    }
-  };
-  /**
-   * Gets executed when a refresh happens.
-   * @param {string} oldSessionId session ID of the old session
-   * @param {string} newSessionId session ID of the new session
-   */
-  // onReload: function(oldSessionId, newSessionId) {
-  // }
-  /**
-   * Hook that gets executed before a WebdriverIO assertion happens.
-   * @param {object} params information about the assertion to be executed
-   */
-  // beforeAssertion: function(params) {
-  // }
-  /**
-   * Hook that gets executed after a WebdriverIO assertion happened.
-   * @param {object} params information about the assertion that was executed, including its results
-   */
-  // afterAssertion: function(params) {
-  // }
-
+    const reportGenerator = new HTMLReportGenerator(
+      outputFilePath,
+      historyFile
+    );
+    await reportGenerator.convertJSONFolderToHTML(jsonFolder);
+  },
+};
+/**
+ * Gets executed when a refresh happens.
+ * @param {string} oldSessionId session ID of the old session
+ * @param {string} newSessionId session ID of the new session
+ */
+// onReload: function(oldSessionId, newSessionId) {
+// }
+/**
+ * Hook that gets executed before a WebdriverIO assertion happens.
+ * @param {object} params information about the assertion to be executed
+ */
+// beforeAssertion: function(params) {
+// }
+/**
+ * Hook that gets executed after a WebdriverIO assertion happened.
+ * @param {object} params information about the assertion that was executed, including its results
+ */
+// afterAssertion: function(params) {
+// }

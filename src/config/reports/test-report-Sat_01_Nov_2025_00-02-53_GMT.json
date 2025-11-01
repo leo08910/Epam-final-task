@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "executionId": "1761955364178",
+    "browserName": "chrome",
+    "executionStartTime": "Sat, 01 Nov 2025 00:02:44 GMT",
+    "executionEndTime": "Sat, 01 Nov 2025 00:02:53 GMT",
+    "totalTimeInMinutes": "0.15"
+  },
+  "testResults": [
+    {
+      "uid": "5c4231b3-03d6-4b5b-9901-db8df965b523",
+      "timestamp": "00:02:48",
+      "suiteName": "0",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "1aa4680d-a5b7-4188-95e0-b073717920ee",
+      "timestamp": "00:02:49",
+      "suiteName": "0",
+      "testName": "When I enter any username and password",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "5ed6ee55-8353-4d45-ab09-3d23428bc7d6",
+      "timestamp": "00:02:49",
+      "suiteName": "0",
+      "testName": "And I clear both input fields",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "72d422c4-ff2c-435a-b481-51b41bbc2bf1",
+      "timestamp": "00:02:49",
+      "suiteName": "0",
+      "testName": "And I click the login button",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "c3e83617-c311-475a-baeb-b07b55c4b78a",
+      "timestamp": "00:02:49",
+      "suiteName": "0",
+      "testName": "Then I should see an error message saying \"Epic sadface: Username is required\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "c3ac3e66-78db-4051-a81a-c98d090f4f5a",
+      "timestamp": "00:02:49",
+      "suiteName": "1",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "8c9cdd79-e9f5-417a-b4f6-52a13ee2fc7c",
+      "timestamp": "00:02:49",
+      "suiteName": "1",
+      "testName": "When I enter any username and password",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "01998119-8cc1-49d3-a907-94a43ca22206",
+      "timestamp": "00:02:50",
+      "suiteName": "1",
+      "testName": "And I clear password input field",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "b03924e3-d643-473a-95e1-8db18424f052",
+      "timestamp": "00:02:50",
+      "suiteName": "1",
+      "testName": "And I click the login button",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "513fb3fc-369d-43e4-9962-a68d5ac8a5c9",
+      "timestamp": "00:02:50",
+      "suiteName": "1",
+      "testName": "Then I should see an error message saying \"Epic sadface: Password is required\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "ac306ae0-f31f-4ccf-b0bb-004bfe5f2e2a",
+      "timestamp": "00:02:51",
+      "suiteName": "2",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "a93292aa-5d6f-4369-b9a9-f045db5bd69b",
+      "timestamp": "00:02:51",
+      "suiteName": "2",
+      "testName": "When I login with standard_user and <password>",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "927e8f70-5d0a-4d60-8fd8-3278d2f12393",
+      "timestamp": "00:02:51",
+      "suiteName": "2",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "cca5d368-4c95-4fdb-ac13-4d81961b15b5",
+      "timestamp": "00:02:51",
+      "suiteName": "3",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "eb4927e3-0cb9-47fa-969f-d4f89fcd4d12",
+      "timestamp": "00:02:51",
+      "suiteName": "3",
+      "testName": "When I login with problem_user and <password>",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "0dd35eaa-b5a3-4575-9c6e-a9a10b669a4a",
+      "timestamp": "00:02:51",
+      "suiteName": "3",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "ca18baf6-cdd0-4aee-bea9-f1980a0c4a30",
+      "timestamp": "00:02:51",
+      "suiteName": "4",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "bd1f7095-2258-4bda-b042-9691e14c63d2",
+      "timestamp": "00:02:52",
+      "suiteName": "4",
+      "testName": "When I login with performance_glitch_user and <password>",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "7aa1a21e-c815-4553-b86e-5727f3aeb813",
+      "timestamp": "00:02:52",
+      "suiteName": "4",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "0faec4db-0e6f-4768-ad80-9bfb48d9aaf6",
+      "timestamp": "00:02:52",
+      "suiteName": "5",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "a6f93d8e-c7ec-402d-9a8c-f533e34ed951",
+      "timestamp": "00:02:52",
+      "suiteName": "5",
+      "testName": "When I login with error_user and <password>",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "0851de65-06ed-4922-a8f9-10e14a8702b4",
+      "timestamp": "00:02:52",
+      "suiteName": "5",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "adfdfb60-6a77-4a33-b048-ce739b2ca257",
+      "timestamp": "00:02:52",
+      "suiteName": "6",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "c1972ffe-8561-4760-affb-90479c7d1d98",
+      "timestamp": "00:02:52",
+      "suiteName": "6",
+      "testName": "When I login with visual_user and <password>",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "46aee79f-2111-4281-8d02-27e2f8cb2b16",
+      "timestamp": "00:02:52",
+      "suiteName": "6",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    }
+  ]
+}
