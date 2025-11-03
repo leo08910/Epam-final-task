@@ -16,7 +16,7 @@ When(/^I enter any username and password$/, async () => {
     await loginPage.inputPassword.setValue("somepass");
 });
 
-When(/^I login with (.*) and (.*)$/, async (username, password) => {
+When(/^I login with "(.*)" and "(.*)"$/, async (username, password) => {
     await loginPage.login(username, password);
 })
 
