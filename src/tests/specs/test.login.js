@@ -39,7 +39,7 @@ describe("SauceDemo Login Tests", () => {
     it(`UC-3: should login successfully with valid user ${username}`, async () => {
       await loginPage.form.login(username ,"secret_sauce");
 
-      loginPage.expectTitle('Swag Labs');
+      loginPage.expectTitleToBe('Swag Labs');
     });
   });
 });

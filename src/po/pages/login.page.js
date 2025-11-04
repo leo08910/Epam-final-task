@@ -7,7 +7,7 @@ class LoginPage extends BasePage {
     this.form = new LoginForm
   }
 
-  async expectTitle(title) {
+  async expectTitleToBe(title) {
     await expect(browser).toHaveTitle(title);
   }
 }

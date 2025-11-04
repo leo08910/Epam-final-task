@@ -40,7 +40,7 @@ Then(/^I should see an error message saying "(.*)"$/, async (message) => {
 });
 
 Then(/^I should see the page title "(.*)"$/, async (title) => {
-    loginPage.expectTitle(title);
+    loginPage.expectTitleToBe(title);
 })
 
 
