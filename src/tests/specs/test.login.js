@@ -7,39 +7,39 @@ describe("SauceDemo Login Tests", () => {
   });
 
   it("UC-1: should show error when credentials are empty", async () => {
-    await loginPage.inputUsername.setValue("someuser");
-    await loginPage.inputPassword.setValue("somepass");
+    await loginPage.form.inputUsername.setValue("someuser");
+    await loginPage.form.inputPassword.setValue("somepass");
 
-    await loginPage.clearUsername();
-    await loginPage.clearPassword();
+    await loginPage.form.clearUsername();
+    await loginPage.form.clearPassword();
 
-    await loginPage.btnSubmit.click();
+    await loginPage.form.btnSubmit.click();
 
-    await expect(loginPage.errorMessage).toBeExisting();
-    await expect(loginPage.errorMessage).toHaveText(
+    await expect(loginPage.form.errorMessage).toBeExisting();
+    await expect(loginPage.form.errorMessage).toHaveText(
       "Epic sadface: Username is required"
     );
   });
 
   it("UC-2: should show error when password is empty", async () => {
-    await loginPage.inputUsername.setValue("someuser");
-    await loginPage.inputPassword.setValue("somepass");
+    await loginPage.form.inputUsername.setValue("someuser");
+    await loginPage.form.inputPassword.setValue("somepass");
 
-    await loginPage.clearPassword();
+    await loginPage.form.clearPassword();
 
-    await loginPage.btnSubmit.click();
+    await loginPage.form.btnSubmit.click();
 
-    await expect(loginPage.errorMessage).toBeExisting();
-    await expect(loginPage.errorMessage).toHaveText(
+    await expect(loginPage.form.errorMessage).toBeExisting();
+    await expect(loginPage.form.errorMessage).toHaveText(
       "Epic sadface: Password is required"
     );
   });
 
   users.forEach(({ username }) => {
     it(`UC-3: should login successfully with valid user ${username}`, async () => {
-      await loginPage.login(username ,"secret_sauce");
+      await loginPage.form.login(username ,"secret_sauce");
 
-      await expect(browser).toHaveTitle("Swag Labs");
+      loginPage.expectTitle('Swag Labs');
     });
   });
 });

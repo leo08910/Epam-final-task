@@ -12,35 +12,35 @@ Given(/^I am on the (\w+) page$/, async (page) => {
 });
 
 When(/^I enter any username and password$/, async () => {
-    await loginPage.inputUsername.setValue('someuser');
-    await loginPage.inputPassword.setValue("somepass");
+    await loginPage.form.inputUsername.setValue('someuser');
+    await loginPage.form.inputPassword.setValue("somepass");
 });
 
 When(/^I login with "(.*)" and "(.*)"$/, async (username, password) => {
-    await loginPage.login(username, password);
+    await loginPage.form.login(username, password);
 })
 
 When(/^I clear both input fields$/, async () => {
-    await loginPage.clearUsername();
-    await loginPage.clearPassword();
+    await loginPage.form.clearUsername();
+    await loginPage.form.clearPassword();
 });
 
 When(/^I click the login button$/, async () => {
-  await loginPage.btnSubmit.click();
+  await loginPage.form.btnSubmit.click();
 });
 
 When(/^I clear password input field$/, async () => {
-    await loginPage.clearPassword();
+    await loginPage.form.clearPassword();
 });
 
 
 Then(/^I should see an error message saying "(.*)"$/, async (message) => {
-  await expect(loginPage.errorMessage).toBeExisting();
-  await expect(loginPage.errorMessage).toHaveText(message);
+  await expect(loginPage.form.errorMessage).toBeExisting();
+  await expect(loginPage.form.errorMessage).toHaveText(message);
 });
 
 Then(/^I should see the page title "(.*)"$/, async (title) => {
-    await expect(browser).toHaveTitle(title);
+    loginPage.expectTitle(title);
 })
 
 

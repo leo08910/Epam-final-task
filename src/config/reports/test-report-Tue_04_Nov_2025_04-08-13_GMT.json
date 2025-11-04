@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "executionId": "1762229274901",
+    "browserName": "firefox",
+    "executionStartTime": "Tue, 04 Nov 2025 04:07:54 GMT",
+    "executionEndTime": "Tue, 04 Nov 2025 04:08:13 GMT",
+    "totalTimeInMinutes": "0.31"
+  },
+  "testResults": [
+    {
+      "uid": "1147ae89-2b2f-44f5-8ee4-cf9c03e7e014",
+      "timestamp": "04:08:03",
+      "suiteName": "0",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "76671ddc-8adb-4735-b691-3796170803bd",
+      "timestamp": "04:08:04",
+      "suiteName": "0",
+      "testName": "When I enter any username and password",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "62483666-1739-4542-b86a-f66e756d5657",
+      "timestamp": "04:08:04",
+      "suiteName": "0",
+      "testName": "And I clear both input fields",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "2b7ee0af-b53a-4a23-9866-c85c711214c3",
+      "timestamp": "04:08:04",
+      "suiteName": "0",
+      "testName": "And I click the login button",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "38ba60b5-3b34-4e90-b786-a64a7e01e47a",
+      "timestamp": "04:08:04",
+      "suiteName": "0",
+      "testName": "Then I should see an error message saying \"Epic sadface: Username is required\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "a97099e4-4afb-4d55-8073-0f523460d820",
+      "timestamp": "04:08:04",
+      "suiteName": "1",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "1a1069de-0d35-41f9-a0fd-c3e44f486de6",
+      "timestamp": "04:08:05",
+      "suiteName": "1",
+      "testName": "When I enter any username and password",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "daa6506a-1c64-4e06-9997-a37fe4569225",
+      "timestamp": "04:08:05",
+      "suiteName": "1",
+      "testName": "And I clear password input field",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "6d47606d-86f8-43eb-b469-7c409621545f",
+      "timestamp": "04:08:05",
+      "suiteName": "1",
+      "testName": "And I click the login button",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "fce04209-39ac-43dd-9388-b822b575d298",
+      "timestamp": "04:08:05",
+      "suiteName": "1",
+      "testName": "Then I should see an error message saying \"Epic sadface: Password is required\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "599bac27-b284-464a-bd12-28f9e1c743b2",
+      "timestamp": "04:08:05",
+      "suiteName": "2",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "01f52269-c4cc-4f7c-938c-00c81498c82a",
+      "timestamp": "04:08:05",
+      "suiteName": "2",
+      "testName": "When I login with \"standard_user\" and \"secret_sauce\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "4ca08379-5aff-4824-8415-0bcad7f9d0f7",
+      "timestamp": "04:08:05",
+      "suiteName": "2",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "FAILED",
+      "errors": [
+        {
+          "message": "TypeError: loginPage.getTitle is not a function",
+          "stack": "TypeError: loginPage.getTitle is not a function\n    at World.<anonymous> (C:\\Users\\usuario\\OneDrive\\Escritorio\\programacion utn\\epam\\practice-project\\src\\tests\\features\\step-definitions\\steps.js:43:15)"
+        }
+      ],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "76c0e25a-cd1d-4f63-bdb1-9fc0e4383ec8",
+      "timestamp": "04:08:05",
+      "suiteName": "3",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "4a945f52-a847-4a27-8a21-75ac02715ea2",
+      "timestamp": "04:08:06",
+      "suiteName": "3",
+      "testName": "When I login with \"problem_user\" and \"secret_sauce\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "d7252921-4117-47f4-afa2-16e2bdc12261",
+      "timestamp": "04:08:06",
+      "suiteName": "3",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "FAILED",
+      "errors": [
+        {
+          "message": "TypeError: loginPage.getTitle is not a function",
+          "stack": "TypeError: loginPage.getTitle is not a function\n    at World.<anonymous> (C:\\Users\\usuario\\OneDrive\\Escritorio\\programacion utn\\epam\\practice-project\\src\\tests\\features\\step-definitions\\steps.js:43:15)"
+        }
+      ],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "f9b9a353-9dfd-4700-866f-e02ab57cfe27",
+      "timestamp": "04:08:06",
+      "suiteName": "4",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "e7729194-1956-4936-bf77-a883e0cd4464",
+      "timestamp": "04:08:11",
+      "suiteName": "4",
+      "testName": "When I login with \"performance_glitch_user\" and \"secret_sauce\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "cb45bdb0-80a7-408c-b094-0b630a3b9ae7",
+      "timestamp": "04:08:11",
+      "suiteName": "4",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "FAILED",
+      "errors": [
+        {
+          "message": "TypeError: loginPage.getTitle is not a function",
+          "stack": "TypeError: loginPage.getTitle is not a function\n    at World.<anonymous> (C:\\Users\\usuario\\OneDrive\\Escritorio\\programacion utn\\epam\\practice-project\\src\\tests\\features\\step-definitions\\steps.js:43:15)"
+        }
+      ],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "9cd96d8a-7910-4bfe-894d-e2139b63b026",
+      "timestamp": "04:08:11",
+      "suiteName": "5",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "b076296d-1837-438b-85b4-3c0b8a7f2607",
+      "timestamp": "04:08:11",
+      "suiteName": "5",
+      "testName": "When I login with \"error_user\" and \"secret_sauce\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "c5bca0f4-a976-42da-80a2-2d30a023954d",
+      "timestamp": "04:08:11",
+      "suiteName": "5",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "FAILED",
+      "errors": [
+        {
+          "message": "TypeError: loginPage.getTitle is not a function",
+          "stack": "TypeError: loginPage.getTitle is not a function\n    at World.<anonymous> (C:\\Users\\usuario\\OneDrive\\Escritorio\\programacion utn\\epam\\practice-project\\src\\tests\\features\\step-definitions\\steps.js:43:15)"
+        }
+      ],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "acf0a8b8-3acc-4035-a87e-8103d3b8aeb8",
+      "timestamp": "04:08:12",
+      "suiteName": "6",
+      "testName": "Given I am on the login page",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "ecee4af7-fe86-49fa-8158-34546666e36d",
+      "timestamp": "04:08:12",
+      "suiteName": "6",
+      "testName": "When I login with \"visual_user\" and \"secret_sauce\"",
+      "status": "PASSED",
+      "errors": [],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    },
+    {
+      "uid": "ea0165cc-f947-4b7f-83e7-ddcffab30800",
+      "timestamp": "04:08:12",
+      "suiteName": "6",
+      "testName": "Then I should see the page title \"Swag Labs\"",
+      "status": "FAILED",
+      "errors": [
+        {
+          "message": "TypeError: loginPage.getTitle is not a function",
+          "stack": "TypeError: loginPage.getTitle is not a function\n    at World.<anonymous> (C:\\Users\\usuario\\OneDrive\\Escritorio\\programacion utn\\epam\\practice-project\\src\\tests\\features\\step-definitions\\steps.js:43:15)"
+        }
+      ],
+      "screenshot": "",
+      "browserConsoleLogs": [],
+      "specConsoleLogs": []
+    }
+  ]
+}
